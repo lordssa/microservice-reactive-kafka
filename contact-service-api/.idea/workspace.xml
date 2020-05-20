@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf44cea5-3911-4c5c-abe1-373d1278cf18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/ProducerWithCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbit/src/main/java/com/example/rabbit/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbit/src/main/java/com/example/rabbit/source/RestSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/MessageInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/RabbitSubscriberApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/test/java/com/example/rabbitSubscriber/RabbitSubscriberApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/CrudApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/config/ModelMapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/PeopleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/converter/ContactResourceToContactConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/converter/ContactToContactResourceConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/converter/PeopleResourceToPeopleConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/converter/PeopleToPeopleResourceConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/exception/TypeContactNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/resource/ContactResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/resource/PeopleResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/controller/resource/TypeContactResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/domain/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/domain/People.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/domain/TypeContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/ContactRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/PeopleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/converter/ContactDBToContactConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/converter/ContactToContactDBConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/converter/PeopleDBToPeopleConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/converter/PeopleToPeopleDBConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/model/ContactDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/model/PeopleDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/repository/model/TypeContactDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/AddContactUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/DeleteContactUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/GetContactUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/UpdateContactUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/impl/AddContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/impl/DeleteContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/impl/GetContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/contact/impl/UpdateContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/exception/PeopleNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/AddPeopleUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/DeletePeopleUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/GetPeopleUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/UpdatePeopleUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/impl/AddPeople.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/impl/DeletePeople.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/impl/GetPeople.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/bravi/crud/usecase/people/impl/UpdatePeople.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/bravi/crud/CrudApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="11" />
+  </component>
+  <component name="ProjectId" id="1bBWXcKSdilppqQ84OChmypIMG8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../service-gateway" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="architecture.general" />
+      <recent name="architecture.dataprovider" />
+      <recent name="architecture.entrypoint" />
+      <recent name="architecture.extensions" />
+      <recent name="com.soares.core.usecase.people.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/repository/model" />
+      <recent name="$PROJECT_DIR$/domain/src/main/java/com/soares/core/entity" />
+      <recent name="$PROJECT_DIR$/app/src/test/java/architecture" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/soares/flux" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AnnotationConventionTest">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdapterNamingConventionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="architecture.entrypoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="architecture.entrypoint" />
+      <option name="MAIN_CLASS_NAME" value="architecture.entrypoint.AdapterNamingConventionTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnnotationConventionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="architecture.general.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="architecture.general" />
+      <option name="MAIN_CLASS_NAME" value="architecture.general.AnnotationConventionTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerNamingConventionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="architecture.entrypoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="architecture.entrypoint" />
+      <option name="MAIN_CLASS_NAME" value="architecture.entrypoint.ControllerNamingConventionTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CyclicDependencyRulesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="architecture.general.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="architecture.general" />
+      <option name="MAIN_CLASS_NAME" value="architecture.general.CyclicDependencyRulesTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceNamingConventionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="architecture.entrypoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="architecture.entrypoint" />
+      <option name="MAIN_CLASS_NAME" value="architecture.entrypoint.ResourceNamingConventionTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Java Scratch">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AnnotationConventionTest" />
+        <item itemvalue="JUnit.ResourceNamingConventionTest" />
+        <item itemvalue="JUnit.AdapterNamingConventionTest" />
+        <item itemvalue="JUnit.ControllerNamingConventionTest" />
+        <item itemvalue="JUnit.CyclicDependencyRulesTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf44cea5-3911-4c5c-abe1-373d1278cf18" name="Default Changelist" comment="" />
+      <created>1588106007021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588106007021</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="239" y="41" width="1024" height="852" key="#Project_Structure" timestamp="1588255788728">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="239" y="41" width="1024" height="852" key="#Project_Structure/72.27.1368.873@72.27.1368.873" timestamp="1588255788728" />
+    <state x="214" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588173663838">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="214" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1368.873@72.27.1368.873" timestamp="1588173663838" />
+    <state x="564" y="171" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1588261434895">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="564" y="171" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1368.873@72.27.1368.873" timestamp="1588261434895" />
+    <state x="281" y="388" width="956" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588193103460">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="281" y="388" width="956" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/72.27.1368.873@72.27.1368.873" timestamp="1588193103460" />
+    <state x="72" y="27" width="702" height="873" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589915173099">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="72" y="27" width="702" height="873" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1368.873@72.27.1368.873" timestamp="1589915173099" />
+    <state x="489" y="212" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589915223288">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="489" y="212" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1368.873@72.27.1368.873" timestamp="1589915223288" />
+    <state width="508" height="478" key="DebuggerActiveHint" timestamp="1588257082356">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="508" height="478" key="DebuggerActiveHint/72.27.1368.873@72.27.1368.873" timestamp="1588257082356" />
+    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl" timestamp="1589916572381">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1589916572381" />
+    <state width="1322" height="294" key="GridCell.Tab.0.bottom" timestamp="1589488095173">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="294" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1589488095173" />
+    <state width="1322" height="294" key="GridCell.Tab.0.center" timestamp="1589488095172">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="294" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1589488095172" />
+    <state width="1322" height="294" key="GridCell.Tab.0.left" timestamp="1589488095171">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="294" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1589488095171" />
+    <state width="1322" height="294" key="GridCell.Tab.0.right" timestamp="1589488095172">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="294" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1589488095172" />
+    <state width="1322" height="268" key="GridCell.Tab.1.bottom" timestamp="1588259315647">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="268" key="GridCell.Tab.1.bottom/72.27.1368.873@72.27.1368.873" timestamp="1588259315647" />
+    <state width="1322" height="268" key="GridCell.Tab.1.center" timestamp="1588259315645">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="268" key="GridCell.Tab.1.center/72.27.1368.873@72.27.1368.873" timestamp="1588259315645" />
+    <state width="1322" height="268" key="GridCell.Tab.1.left" timestamp="1588259315645">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="268" key="GridCell.Tab.1.left/72.27.1368.873@72.27.1368.873" timestamp="1588259315645" />
+    <state width="1322" height="268" key="GridCell.Tab.1.right" timestamp="1588259315645">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state width="1322" height="268" key="GridCell.Tab.1.right/72.27.1368.873@72.27.1368.873" timestamp="1588259315645" />
+    <state x="289" y="121" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1588171078521">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="289" y="121" width="924" height="691" key="Maven.ArtifactSearchDialog/72.27.1368.873@72.27.1368.873" timestamp="1588171078521" />
+    <state x="361" y="244" width="780" height="446" key="NewModule_or_Project.wizard" timestamp="1588106642417">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="361" y="244" width="780" height="446" key="NewModule_or_Project.wizard/72.27.1368.873@72.27.1368.873" timestamp="1588106642417" />
+    <state x="245" y="98" width="1022" height="737" key="SettingsEditor" timestamp="1589921274481">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="245" y="98" width="1022" height="737" key="SettingsEditor/72.27.1368.873@72.27.1368.873" timestamp="1589921274481" />
+    <state x="72" y="167" width="1358" height="599" key="new project wizard" timestamp="1588168645701">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="72" y="167" width="1358" height="599" key="new project wizard/72.27.1368.873@72.27.1368.873" timestamp="1588168645701" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/com/soares/core/usecase/contact/impl/AddContact.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/repository/adapter/ContactToContactDBConverter.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/AddPeopleUseCase.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/DeletePeopleUseCase.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/impl/UpdatePeople.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/entity/People.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/GetAllPeopleUseCase.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/impl/GetAllPeople.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/UpdatePeopleUseCase.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/impl/GetPeople.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/exception/PeopleNotFoundException.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/impl/AddPeople.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/gateway/IPeopleGateway.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/GetPeopleUseCase.java
+/home/cid/ProjetosJava/ProjetoDeezerFy/domain/src/main/java/com/soares/core/usecase/people/impl/DeletePeople.java
