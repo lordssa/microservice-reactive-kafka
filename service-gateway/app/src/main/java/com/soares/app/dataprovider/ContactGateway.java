@@ -37,7 +37,7 @@ public class ContactGateway implements IContactGateway {
     public Flux<Contact> getContactsByPeople(Contact contact) {
         return Flux.just(contact)
                 .map(contactToContactIntegrationResourceConverter::convert)
-                .map(ContactIntegrationResource::getId)
+                .map(ContactIntegrationResource::getPeopleId)
                 .flatMap(contactService::getContactsByPeople)
                 .map(contactIntegrationResourceToContactConverter::convert)
                 .defaultIfEmpty(Contact.builder().build());

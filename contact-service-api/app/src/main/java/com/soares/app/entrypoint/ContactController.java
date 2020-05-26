@@ -26,6 +26,7 @@ public class ContactController implements BaseEndpoint {
     private final AddContactUseCase addContactUseCase;
     private final UpdateContactUseCase updateContactUseCase;
     private final GetContactUseCase getContactUseCase;
+    private final GetContactsByPeopleUseCase getContactsByPeopleUseCase;
     private final GetAllContactUseCase getAllContactUseCase;
     private final DeleteContactUseCase deleteContactUseCase;
 
@@ -62,6 +63,22 @@ public class ContactController implements BaseEndpoint {
         return ofNullable(request)
                 .map(contactResourceToContactConverter::convert)
                 .map(getContactUseCase::execute)
+                .get()
+                .map(contactToContactResourceConverter::convert)
+                .defaultIfEmpty(ContactResource.builder().build());
+    }
+
+    @GetMapping("/people")
+    @ResponseStatus(code = HttpStatus.OK)
+    public Flux<ContactResource> getContactByPeople(@RequestParam(required = true) String idPeople) {
+        final var request = ContactResource
+                .builder()
+                .peopleId(idPeople)
+                .build();
+
+        return ofNullable(request)
+                .map(contactResourceToContactConverter::convert)
+                .map(getContactsByPeopleUseCase::execute)
                 .get()
                 .map(contactToContactResourceConverter::convert)
                 .defaultIfEmpty(ContactResource.builder().build());

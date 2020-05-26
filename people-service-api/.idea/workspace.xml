@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf44cea5-3911-4c5c-abe1-373d1278cf18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/Processor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/target/classes/com/soares/kafka/stream/Processor.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Consumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Producer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/ProducerWithCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../microservice-reactive-kafka" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/src/main/java/be/reactiveprogramming/paymentprocessor/common/event/PaymentEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/PaymentGatewayApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/command/CreatePaymentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/gateway/PaymentGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/gateway/PaymentGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/static/ccvalidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/static/css/tracker-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/PaymentValidatorApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/listener/PaymentValidatorListenerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/PaymentValidatorApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/listener/PaymentValidatorListenerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidatorImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rabbit/src/main/java/com/example/rabbit/controller/MessageController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rabbit/src/main/java/com/example/rabbit/source/RestSource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/.gitignore" afterDir="false" />
@@ -114,7 +145,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../service-gateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -136,7 +167,22 @@
       <recent name="$PROJECT_DIR$/app/src/main/java/com/soares/flux/adapter" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnnotationConventionTest">
+  <component name="RunManager" selected="Application.FluxApplication">
+    <configuration name="FluxApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.soares.app.FluxApplication" />
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soares.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -204,26 +250,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CyclicDependencyRulesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="architecture.general.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="PACKAGE_NAME" value="architecture.general" />
-      <option name="MAIN_CLASS_NAME" value="architecture.general.CyclicDependencyRulesTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ResourceNamingConventionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <useClassPathOnly />
@@ -270,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FluxApplication" />
         <item itemvalue="JUnit.AnnotationConventionTest" />
         <item itemvalue="JUnit.ResourceNamingConventionTest" />
         <item itemvalue="JUnit.AdapterNamingConventionTest" />
         <item itemvalue="JUnit.ControllerNamingConventionTest" />
-        <item itemvalue="JUnit.CyclicDependencyRulesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,22 +345,22 @@
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1590006747071" />
-    <state width="1322" height="294" key="GridCell.Tab.0.bottom" timestamp="1589488095173">
+    <state width="1322" height="294" key="GridCell.Tab.0.bottom" timestamp="1590522837783">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1589488095173" />
-    <state width="1322" height="294" key="GridCell.Tab.0.center" timestamp="1589488095172">
+    <state width="1322" height="294" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1590522837783" />
+    <state width="1322" height="294" key="GridCell.Tab.0.center" timestamp="1590522837781">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1589488095172" />
-    <state width="1322" height="294" key="GridCell.Tab.0.left" timestamp="1589488095171">
+    <state width="1322" height="294" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1590522837781" />
+    <state width="1322" height="294" key="GridCell.Tab.0.left" timestamp="1590522837777">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1589488095171" />
-    <state width="1322" height="294" key="GridCell.Tab.0.right" timestamp="1589488095172">
+    <state width="1322" height="294" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1590522837777" />
+    <state width="1322" height="294" key="GridCell.Tab.0.right" timestamp="1590522837782">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1589488095172" />
+    <state width="1322" height="294" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1590522837782" />
     <state width="1322" height="268" key="GridCell.Tab.1.bottom" timestamp="1588259315647">
       <screen x="72" y="27" width="1368" height="873" />
     </state>

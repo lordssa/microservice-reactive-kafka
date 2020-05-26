@@ -8,6 +8,7 @@ public interface IContactGateway {
     Mono<Contact> save(Contact contact);
     Mono<Void> delete(String id);
     Mono<Contact> getContactById(Contact contact);
+    Flux<Contact> getContactsByPeople(Contact contact);
     Flux<Contact> getAllContact();
     Mono<Contact> update(Contact contact);
 }

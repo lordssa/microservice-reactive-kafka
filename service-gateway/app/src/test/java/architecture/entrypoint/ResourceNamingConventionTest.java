@@ -6,7 +6,7 @@ import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 
-@AnalyzeClasses(packages = "..com.soares.entrypoint.adapter", importOptions = {DoNotIncludeTests.class})
+@AnalyzeClasses(packages = "..com.soares.entrypoint.resource", importOptions = {DoNotIncludeTests.class})
 class ResourceNamingConventionTest {
 
     @ArchTest

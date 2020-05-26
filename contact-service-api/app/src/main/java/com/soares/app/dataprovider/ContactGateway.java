@@ -43,6 +43,18 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
+    public Flux<Contact> getContactsByPeople(Contact contact) {
+        System.out.println(contact);
+        return Flux.just(contact)
+                .map(contactToContactDBConverter::convert)
+                .map(ContactDB::getPeopleId)
+                .flatMap(peopleId -> contactRepository.findAllByPeopleId(peopleId))
+                .doOnNext(System.out::println)
+                .map(contactDBToContactConverter::convert)
+                .defaultIfEmpty(Contact.builder().build());
+    }
+
+    @Override
     public Flux<Contact> getAllContact() {
         return contactRepository.findAll()
                 .map(contactDBToContactConverter::convert);
