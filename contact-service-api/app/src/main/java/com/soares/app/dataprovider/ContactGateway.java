@@ -55,7 +55,7 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
-    public Flux<Contact> getAllContact() {
+    public Flux<Contact> getAll() {
         return contactRepository.findAll()
                 .map(contactDBToContactConverter::convert);
     }

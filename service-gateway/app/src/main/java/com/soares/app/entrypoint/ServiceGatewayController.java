@@ -34,7 +34,9 @@ public class ServiceGatewayController implements BaseEndpoint {
                 .map(peopleResourceToPeopleConverter::convert)
                 .map(listPeopleWithTheirContactsUseCase::execute)
                 .get()
+                .log()
                 .map(peopleToPeopleResourceConverter::convert)
+                .doOnNext(System.out::println)
                 .defaultIfEmpty(PeopleResource.builder().build());
     }
 }

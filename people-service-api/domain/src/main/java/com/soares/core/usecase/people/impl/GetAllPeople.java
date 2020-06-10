@@ -17,6 +17,6 @@ public class GetAllPeople implements GetAllPeopleUseCase {
 
     @Override
     public Flux<People> execute() {
-        return peopleGateway.getAllPeople();
+        return peopleGateway.getAll();
     }
 }

@@ -32,6 +32,7 @@ public class PeopleController implements BaseEndpoint {
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
     public Mono<PeopleResource> addPeople(@RequestBody @Valid final PeopleResource request) {
+
         return ofNullable(request)
                 .map(peopleResourceToPeopleConverter::convert)
                 .map(addPeopleUseCase::execute)

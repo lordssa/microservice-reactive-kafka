@@ -43,7 +43,7 @@ public class PeopleGateway implements IPeopleGateway {
     }
 
     @Override
-    public Flux<People> getAllPeople() {
+    public Flux<People> getAll() {
         return peopleRepository.findAll()
                 .map(peopleDBToPeopleConverter::convert);
     }

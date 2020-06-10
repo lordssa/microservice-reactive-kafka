@@ -17,6 +17,6 @@ public class GetAllContact implements GetAllContactUseCase {
 
     @Override
     public Flux<Contact> execute() {
-        return contactGateway.getAllContact();
+        return contactGateway.getAll();
     }
 }

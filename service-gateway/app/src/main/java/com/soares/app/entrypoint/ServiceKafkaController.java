@@ -22,11 +22,12 @@ public class ServiceKafkaController implements BaseEndpoint {
     private final PeopleResourceToPeopleConverter peopleResourceToPeopleConverter;
     private final PeopleToPeopleResourceConverter peopleToPeopleResourceConverter;
     private final ListPeopleWithTheirContactsUseCase listPeopleWithTheirContactsUseCase;
-    private final KafkaProducer kafkaProducer;
-    @GetMapping
+    //private final KafkaProducer kafkaProducer;
+
+    /* @GetMapping
     @ResponseStatus(code = HttpStatus.OK)
     public Mono<Void> getPeople(@RequestParam(required = true) String idRequest) {
-        final var request = PeopleResource
+       final var request = PeopleResource
                 .builder()
                 .id(idRequest)
                 .build();
@@ -37,5 +38,5 @@ public class ServiceKafkaController implements BaseEndpoint {
                 .get()
                 .map(peopleToPeopleResourceConverter::convert)
                 .flatMap(kafkaProducer::publish);
-    }
+    }*/
 }

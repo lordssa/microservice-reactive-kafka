@@ -54,7 +54,6 @@ public class KafkaProducer {
 
         return kafkaProducer.send(Mono.just(message))
                 .then();
-
     }
 
     private String toBinary(Object object) {

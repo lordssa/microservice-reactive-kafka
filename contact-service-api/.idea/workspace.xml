@@ -4,11 +4,58 @@
     <list default="true" id="bf44cea5-3911-4c5c-abe1-373d1278cf18" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/Processor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/ContactResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/PeopleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/TypeContactResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KafkaStreamsStandalone/target/classes/com/soares/kafka/stream/Processor.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Consumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/Producer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../SimpleKafka/src/main/java/com/example/kafka/ProducerWithCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../microservice-reactive-kafka" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/CarClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/car/CarFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/car/CarFacadeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/conf/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car-model/src/main/java/se/callista/blog/synch_kafka/car/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/CarApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/conf/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/controller/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/persist/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/persist/CarRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/test/java/se/callista/blog/synch_kafka/car/conf/CompletableFutureReplyingKafkaTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/car/src/test/java/se/callista/blog/synch_kafka/car/controller/CarControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/CompletableFutureReplyingKafkaOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/CompletableFutureReplyingKafkaTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/ResponseDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/resource/ContactResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/resource/MetaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/resource/PeopleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/resource/TypeContactResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/gateway/ICrudGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/ICrudGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaConsumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/src/main/java/be/reactiveprogramming/paymentprocessor/common/event/PaymentEvent.java" afterDir="false" />
@@ -51,6 +98,26 @@
       <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/test/java/com/example/rabbitSubscriber/RabbitSubscriberApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/gateway/IContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/gateway/IContactGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/usecase/contact/impl/GetAllContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/usecase/contact/impl/GetAllContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/resource/PeopleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/resource/PeopleResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/IPeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/IPeopleGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/usecase/people/impl/GetAllPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/usecase/people/impl/GetAllPeople.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mvnw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
@@ -107,14 +174,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -145,7 +212,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kafka-streams-course-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -353,22 +420,22 @@
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1590435735565" />
-    <state width="1322" height="294" key="GridCell.Tab.0.bottom" timestamp="1590531550212">
+    <state width="1322" height="324" key="GridCell.Tab.0.bottom" timestamp="1591019059925">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1590531550212" />
-    <state width="1322" height="294" key="GridCell.Tab.0.center" timestamp="1590531550211">
+    <state width="1322" height="324" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1591019059925" />
+    <state width="1322" height="324" key="GridCell.Tab.0.center" timestamp="1591019059925">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1590531550211" />
-    <state width="1322" height="294" key="GridCell.Tab.0.left" timestamp="1590531550211">
+    <state width="1322" height="324" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1591019059925" />
+    <state width="1322" height="324" key="GridCell.Tab.0.left" timestamp="1591019059922">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1590531550211" />
-    <state width="1322" height="294" key="GridCell.Tab.0.right" timestamp="1590531550212">
+    <state width="1322" height="324" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1591019059922" />
+    <state width="1322" height="324" key="GridCell.Tab.0.right" timestamp="1591019059925">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="294" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1590531550212" />
+    <state width="1322" height="324" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1591019059925" />
     <state width="1322" height="268" key="GridCell.Tab.1.bottom" timestamp="1588259315647">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
