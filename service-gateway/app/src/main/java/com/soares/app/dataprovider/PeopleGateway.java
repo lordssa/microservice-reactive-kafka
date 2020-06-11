@@ -7,9 +7,12 @@ import com.soares.app.dataprovider.integration.resource.PeopleIntegrationResourc
 import com.soares.core.entity.People;
 import com.soares.core.gateway.IPeopleGateway;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.time.Duration;
 
 @Component
 @AllArgsConstructor
@@ -29,13 +32,14 @@ public class PeopleGateway implements IPeopleGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "PeopleGateway", key="#people.getId()")
     public Mono<People> getPeopleById(People people) {
         return Mono.just(people)
                 .map(peopleToPeopleIntegrationResourceConverter::convert)
                 .map(PeopleIntegrationResource::getId)
                 .flatMap(peopleService::getPeople)
                 .map(peopleIntegrationResourceToPeopleConverter::convert)
-                .defaultIfEmpty(People.builder().build());
+                .cache(Duration.ofSeconds(120));
     }
 
     @Override

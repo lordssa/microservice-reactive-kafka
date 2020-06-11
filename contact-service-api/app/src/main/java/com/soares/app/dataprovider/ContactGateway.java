@@ -7,6 +7,9 @@ import com.soares.app.dataprovider.repository.model.ContactDB;
 import com.soares.core.entity.Contact;
 import com.soares.core.gateway.IContactGateway;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -28,11 +31,13 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
+    @CacheEvict(cacheNames = "Contact", key = "#id")
     public Mono<Void> delete(String id) {
         return contactRepository.deleteById(id);
     }
 
     @Override
+    @Cacheable(cacheNames = "Contact", key="#contact.getId()")
     public Mono<Contact> getContactById(Contact contact) {
         return Mono.just(contact)
                 .map(contactToContactDBConverter::convert)
@@ -43,6 +48,7 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "Contact", key="#contact.getPeopleId()")
     public Flux<Contact> getContactsByPeople(Contact contact) {
         System.out.println(contact);
         return Flux.just(contact)
@@ -55,12 +61,14 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "Contact", key="#root.method.name")
     public Flux<Contact> getAll() {
         return contactRepository.findAll()
                 .map(contactDBToContactConverter::convert);
     }
 
     @Override
+    @CachePut(cacheNames = "Contact", key="#contact.getPeopleId()")
     public Mono<Contact> update(Contact contact) {
         return Mono.just(contact)
                 .map(contactToContactDBConverter::convert)

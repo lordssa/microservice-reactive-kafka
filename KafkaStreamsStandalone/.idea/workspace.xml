@@ -2,136 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="719267ef-62e8-450f-8f83-d68fd25fec3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/Processor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/ContactResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/PeopleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/TypeContactResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/soares/kafka/stream/Processor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleKafka/src/main/java/com/example/kafka/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleKafka/src/main/java/com/example/kafka/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleKafka/src/main/java/com/example/kafka/ProducerWithCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/CarClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/car/CarFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/car/CarFacadeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/conf/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/java/se/callista/blog/synch_kafka/car/client/controller/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-client/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car-model/src/main/java/se/callista/blog/synch_kafka/car/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/CarApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/conf/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/persist/CarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/java/se/callista/blog/synch_kafka/car/persist/CarRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/test/java/se/callista/blog/synch_kafka/car/conf/CompletableFutureReplyingKafkaTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/car/src/test/java/se/callista/blog/synch_kafka/car/controller/CarControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/kafka-request-reply-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/CompletableFutureReplyingKafkaOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/CompletableFutureReplyingKafkaTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-synchronous-kafka-master/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-reactive-kafka" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-common/src/main/java/be/reactiveprogramming/paymentprocessor/common/event/PaymentEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/PaymentGatewayApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/command/CreatePaymentCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/gateway/PaymentGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/java/be/reactiveprogramming/paymentprocessor/gateway/gateway/PaymentGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/static/ccvalidator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/static/css/tracker-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-gateway/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/PaymentValidatorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/listener/PaymentValidatorListenerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/java/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/PaymentValidatorApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/listener/PaymentValidatorListenerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/paymentprocessor-paymentvalidator/target/classes/be/reactiveprogramming/paymentprocessor/paymentvalidator/validator/PaymentValidatorImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paymentprocessor-kafka-intro-master/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbit/src/main/java/com/example/rabbit/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbit/src/main/java/com/example/rabbit/source/RestSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/MessageConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/MessageInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/src/main/java/com/example/rabbitSubscriber/RabbitSubscriberApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rabbitSubscriber/src/test/java/com/example/rabbitSubscriber/RabbitSubscriberApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/CrudApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/config/ModelMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/ContactController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/PeopleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/converter/ContactResourceToContactConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/converter/ContactToContactResourceConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/converter/PeopleResourceToPeopleConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/converter/PeopleToPeopleResourceConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/exception/TypeContactNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/resource/ContactResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/resource/PeopleResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/controller/resource/TypeContactResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/domain/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/domain/People.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/domain/TypeContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/ContactRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/PeopleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/converter/ContactDBToContactConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/converter/ContactToContactDBConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/converter/PeopleDBToPeopleConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/converter/PeopleToPeopleDBConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/model/ContactDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/model/PeopleDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/repository/model/TypeContactDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/AddContactUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/DeleteContactUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/GetContactUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/UpdateContactUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/impl/AddContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/impl/DeleteContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/impl/GetContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/contact/impl/UpdateContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/exception/PeopleNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/AddPeopleUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/DeletePeopleUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/GetPeopleUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/UpdatePeopleUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/impl/AddPeople.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/impl/DeletePeople.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/impl/GetPeople.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/bravi/crud/usecase/people/impl/UpdatePeople.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/bravi/crud/CrudApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/MetaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/MetaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/IResponseGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/IResponseGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-gateway/domain/src/main/java/com/soares/core/usecase/list/impl/ListPeopleWithTheirContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-gateway/domain/src/main/java/com/soares/core/usecase/list/impl/ListPeopleWithTheirContacts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,21 +104,21 @@
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state x="539" y="221" width="424" height="491" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1591625105432" />
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom" timestamp="1591023743482">
+    <state width="1322" height="216" key="GridCell.Tab.0.bottom" timestamp="1591816568677">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1591023743482" />
-    <state width="1322" height="216" key="GridCell.Tab.0.center" timestamp="1591023743478">
+    <state width="1322" height="216" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1591816568677" />
+    <state width="1322" height="216" key="GridCell.Tab.0.center" timestamp="1591816568671">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1591023743478" />
-    <state width="1322" height="216" key="GridCell.Tab.0.left" timestamp="1591023743478">
+    <state width="1322" height="216" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1591816568671" />
+    <state width="1322" height="216" key="GridCell.Tab.0.left" timestamp="1591816568670">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1591023743478" />
-    <state width="1322" height="216" key="GridCell.Tab.0.right" timestamp="1591023743478">
+    <state width="1322" height="216" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1591816568670" />
+    <state width="1322" height="216" key="GridCell.Tab.0.right" timestamp="1591816568674">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1591023743478" />
+    <state width="1322" height="216" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1591816568674" />
   </component>
 </project>

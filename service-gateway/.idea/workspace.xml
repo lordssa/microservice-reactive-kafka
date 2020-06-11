@@ -42,23 +42,7 @@
       <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaOperations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/kafka-request-reply-util/src/main/java/se/callista/blog/synch_kafka/request_reply_util/PartitionAwareReplyingKafkaTemplate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../blog-synchronous-kafka-master/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/ContactResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/MetaResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/PeopleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/TypeContactResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/IResponseGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/PeopleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/messager/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../contact-service-api/domain/src/main/java/com/soares/core/gateway/ICrudGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/ICrudGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/messager/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/KafkaConsumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../paymentprocessor-kafka-intro-master/paymentprocessor-common/src/main/java/be/reactiveprogramming/paymentprocessor/common/event/PaymentEvent.java" afterDir="false" />
@@ -101,25 +85,37 @@
       <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rabbitSubscriber/src/test/java/com/example/rabbitSubscriber/RabbitSubscriberApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaStreamsStandalone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaStreamsStandalone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaStreamsStandalone/src/main/java/com/soares/kafka/stream/resource/MetaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/dataprovider/ResponseGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/MetaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/resource/MetaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/IResponseGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/IResponseGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bff/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../contact-service-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../contact-service-api/domain/src/main/java/com/soares/core/gateway/IContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/domain/src/main/java/com/soares/core/gateway/IContactGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../contact-service-api/domain/src/main/java/com/soares/core/usecase/contact/impl/GetAllContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/domain/src/main/java/com/soares/core/usecase/contact/impl/GetAllContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../people-service-api/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contact-service-api/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../contact-service-api/app/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/resource/PeopleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/java/com/soares/app/entrypoint/resource/PeopleResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/IPeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/gateway/IPeopleGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/usecase/people/impl/GetAllPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/domain/src/main/java/com/soares/core/usecase/people/impl/GetAllPeople.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../people-service-api/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../people-service-api/app/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/FluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/FluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/ContactGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/dataprovider/PeopleGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/ServiceGatewayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/ServiceKafkaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/messager/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bff/src/main/java/com/cidsoares/bff/entrypoint/KafkaConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/soares/app/entrypoint/messager/KafkaProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/usecase/list/impl/ListPeopleWithTheirContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/soares/core/usecase/list/impl/ListPeopleWithTheirContacts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mvnw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
@@ -214,7 +210,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bff" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../people-service-api" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -421,26 +417,26 @@
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state width="508" height="478" key="DebuggerActiveHint/72.27.1368.873@72.27.1368.873" timestamp="1588257082356" />
-    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl" timestamp="1591794063254">
+    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl" timestamp="1591811013746">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1591794063254" />
-    <state width="1322" height="324" key="GridCell.Tab.0.bottom" timestamp="1591737948892">
+    <state x="539" y="171" width="424" height="592" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1591811013746" />
+    <state width="1322" height="324" key="GridCell.Tab.0.bottom" timestamp="1591910379601">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="324" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1591737948892" />
-    <state width="1322" height="324" key="GridCell.Tab.0.center" timestamp="1591737948892">
+    <state width="1322" height="324" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1591910379601" />
+    <state width="1322" height="324" key="GridCell.Tab.0.center" timestamp="1591910379599">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="324" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1591737948892" />
-    <state width="1322" height="324" key="GridCell.Tab.0.left" timestamp="1591737948891">
+    <state width="1322" height="324" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1591910379599" />
+    <state width="1322" height="324" key="GridCell.Tab.0.left" timestamp="1591910379599">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="324" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1591737948891" />
-    <state width="1322" height="324" key="GridCell.Tab.0.right" timestamp="1591737948892">
+    <state width="1322" height="324" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1591910379599" />
+    <state width="1322" height="324" key="GridCell.Tab.0.right" timestamp="1591910379600">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state width="1322" height="324" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1591737948892" />
+    <state width="1322" height="324" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1591910379600" />
     <state width="1322" height="268" key="GridCell.Tab.1.bottom" timestamp="1588259315647">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
@@ -465,14 +461,22 @@
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state x="361" y="244" width="780" height="446" key="NewModule_or_Project.wizard/72.27.1368.873@72.27.1368.873" timestamp="1588106642417" />
+    <state x="562" y="400" width="377" height="133" key="ReplaceDuplicatesPrompt" timestamp="1591890281057">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="562" y="400" width="377" height="133" key="ReplaceDuplicatesPrompt/72.27.1368.873@72.27.1368.873" timestamp="1591890281057" />
     <state x="245" y="98" width="1022" height="737" key="SettingsEditor" timestamp="1589911418432">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
     <state x="245" y="98" width="1022" height="737" key="SettingsEditor/72.27.1368.873@72.27.1368.873" timestamp="1589911418432" />
-    <state x="446" y="36" width="620" height="855" key="find.popup" timestamp="1591726676959">
+    <state x="489" y="208" width="568" height="517" key="extract.method.dialog" timestamp="1591890273635">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state x="446" y="36" width="620" height="855" key="find.popup/72.27.1368.873@72.27.1368.873" timestamp="1591726676959" />
+    <state x="489" y="208" width="568" height="517" key="extract.method.dialog/72.27.1368.873@72.27.1368.873" timestamp="1591890273635" />
+    <state x="446" y="36" width="620" height="855" key="find.popup" timestamp="1591906412221">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="446" y="36" width="620" height="855" key="find.popup/72.27.1368.873@72.27.1368.873" timestamp="1591906412221" />
     <state x="72" y="167" width="1358" height="599" key="new project wizard" timestamp="1588168645701">
       <screen x="72" y="27" width="1368" height="873" />
     </state>

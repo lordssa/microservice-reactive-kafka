@@ -10,15 +10,10 @@ import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KStreamBuilder;
-import org.apache.kafka.streams.kstream.KTable;
-
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Properties;
 
 public class Processor {
-
-
 
     public static void main(String[] args) {
         Properties config = new Properties();
@@ -43,17 +38,6 @@ public class Processor {
         var streams = new KafkaStreams(builder, config);
         streams.cleanUp(); // only do this in dev - not in prod
         streams.start();
-
-        // eg. textLines = "<null, Kafka kafka streams>"
-
-
-
-
-        // 7 - to in order to write the results back to kafka
-      //  wordCounts.to(Serdes.String(), Serdes.Long(), "word-count-output");
-
-       // KafkaStreams streams = new KafkaStreams(builder, config);
-       // streams.start();
 
         // shutdown hook to correctly close the streams application
         Runtime.getRuntime().addShutdownHook(new Thread(streams::close));

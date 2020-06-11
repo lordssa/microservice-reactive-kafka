@@ -9,6 +9,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.async.DeferredResult;
 
+import java.util.concurrent.ExecutionException;
+
 @Validated
 @AllArgsConstructor
 @RestController
@@ -17,18 +19,13 @@ public class ServiceController {
 
     private PeopleService peopleService;
 
+
     @GetMapping
     @ResponseStatus(code = HttpStatus.OK)
-    public DeferredResult<ResponseEntity<PeopleResource>> getPeople(@RequestParam(required = true) String idRequest) {
-
-        DeferredResult<ResponseEntity<PeopleResource>> output = new DeferredResult<>();
+    public ResponseEntity<PeopleResource> getPeople1(@RequestParam(required = true) String idRequest) throws ExecutionException, InterruptedException {
         final var peopleResource = (PeopleResource) peopleService
-                .getPeopleWithContacts(idRequest)
-                .getResult();
+                .getPeopleWithContacts(idRequest);
 
-        final var response = new ResponseEntity<PeopleResource>(peopleResource, HttpStatus.OK);
-        output.setResult(response);
-
-        return output;
+        return new ResponseEntity<PeopleResource>(peopleResource, HttpStatus.OK);
     }
 }

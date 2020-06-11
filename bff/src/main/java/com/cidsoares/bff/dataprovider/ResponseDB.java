@@ -1,6 +1,7 @@
 package com.cidsoares.bff.dataprovider;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.Id;
@@ -11,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 
 @Data
+@Builder
 @RedisHash("Response")
 @AllArgsConstructor
 public class ResponseDB {

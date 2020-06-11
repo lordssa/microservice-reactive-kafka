@@ -7,6 +7,9 @@ import com.soares.app.dataprovider.repository.model.PeopleDB;
 import com.soares.core.entity.People;
 import com.soares.core.gateway.IPeopleGateway;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -28,11 +31,13 @@ public class PeopleGateway implements IPeopleGateway {
     }
 
     @Override
+    @CacheEvict(cacheNames = "People", key="#id")
     public Mono<Void> delete(String id) {
         return peopleRepository.deleteById(id);
     }
 
     @Override
+    @Cacheable(cacheNames = "People", key="#people.getId()")
     public Mono<People> getPeopleById(People people) {
         return Mono.just(people)
                 .map(peopleToPeopleDBConverter::convert)
@@ -43,12 +48,14 @@ public class PeopleGateway implements IPeopleGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "People", key = "#root.method.name")
     public Flux<People> getAll() {
         return peopleRepository.findAll()
                 .map(peopleDBToPeopleConverter::convert);
     }
 
     @Override
+    @CachePut(cacheNames = "People", key="#people.getId()")
     public Mono<People> update(People people) {
         return Mono.just(people)
                 .map(peopleToPeopleDBConverter::convert)

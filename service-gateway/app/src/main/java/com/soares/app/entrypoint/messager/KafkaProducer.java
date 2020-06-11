@@ -30,10 +30,6 @@ public class KafkaProducer {
     @Value("${kafka.producer.name}")
     private String gatewayName;
 
-
-    /**
-     * Here we do some basic setup of Project Reactor Kafka to be able to send messages
-     */
     public KafkaProducer(@Value("${kafka.broker}") String bootstrapServer) {
         final Map<String, Object> producerProps = new HashMap<>();
         producerProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
@@ -46,14 +42,14 @@ public class KafkaProducer {
         this.kafkaProducer = KafkaSender.create(producerOptions);
     }
 
-    public Mono<Void> publish(final Object response) {
+    public Mono<String> publish(final Object response, String key) {
         final var payload = toBinary(response);
 
-        final SenderRecord<Integer, String, Integer> message =
-                SenderRecord.create(new ProducerRecord<>(peopleTopic, payload), 171);
+        final SenderRecord<String, String, String> message =
+                SenderRecord.create(peopleTopic,null,null, key, payload, key);
 
         return kafkaProducer.send(Mono.just(message))
-                .then();
+                .then(Mono.just(key));
     }
 
     private String toBinary(Object object) {

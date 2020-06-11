@@ -11,6 +11,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
+import java.util.UUID;
+
 import static java.util.Optional.ofNullable;
 
 @Validated
@@ -22,21 +24,23 @@ public class ServiceKafkaController implements BaseEndpoint {
     private final PeopleResourceToPeopleConverter peopleResourceToPeopleConverter;
     private final PeopleToPeopleResourceConverter peopleToPeopleResourceConverter;
     private final ListPeopleWithTheirContactsUseCase listPeopleWithTheirContactsUseCase;
-    //private final KafkaProducer kafkaProducer;
+    private final KafkaProducer kafkaProducer;
 
-    /* @GetMapping
+     @GetMapping
     @ResponseStatus(code = HttpStatus.OK)
-    public Mono<Void> getPeople(@RequestParam(required = true) String idRequest) {
+    public Mono<String> getPeople(@RequestParam(required = true) String idRequest) {
        final var request = PeopleResource
                 .builder()
                 .id(idRequest)
                 .build();
+
+       final var key = UUID.randomUUID().toString();
 
         return ofNullable(request)
                 .map(peopleResourceToPeopleConverter::convert)
                 .map(listPeopleWithTheirContactsUseCase::execute)
                 .get()
                 .map(peopleToPeopleResourceConverter::convert)
-                .flatMap(kafkaProducer::publish);
-    }*/
+                .flatMap(payload -> kafkaProducer.publish(payload, key));
+    }
 }

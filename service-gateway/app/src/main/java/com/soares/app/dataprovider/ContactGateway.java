@@ -7,9 +7,12 @@ import com.soares.app.dataprovider.integration.resource.ContactIntegrationResour
 import com.soares.core.entity.Contact;
 import com.soares.core.gateway.IContactGateway;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.time.Duration;
 
 @Component
 @AllArgsConstructor
@@ -34,13 +37,14 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "ContactGateway", key="#contact.getPeopleId()")
     public Flux<Contact> getContactsByPeople(Contact contact) {
         return Flux.just(contact)
                 .map(contactToContactIntegrationResourceConverter::convert)
                 .map(ContactIntegrationResource::getPeopleId)
                 .flatMap(contactService::getContactsByPeople)
                 .map(contactIntegrationResourceToContactConverter::convert)
-                .defaultIfEmpty(Contact.builder().build());
+                .cache(Duration.ofSeconds(120));
     }
 
     @Override

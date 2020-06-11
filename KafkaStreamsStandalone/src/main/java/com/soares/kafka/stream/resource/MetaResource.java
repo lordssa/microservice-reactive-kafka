@@ -14,5 +14,6 @@ import java.time.LocalDateTime;
 public class MetaResource {
 
     private Long qtdContacts;
+    @Builder.Default
     private LocalDateTime executionTime = LocalDateTime.now();
 }
