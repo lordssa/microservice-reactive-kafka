@@ -4,6 +4,8 @@ import com.cidsoares.bff.services.messager.Producer;
 import com.cidsoares.bff.entrypoint.resource.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.UUID;
@@ -17,7 +19,17 @@ public class PeopleService {
     private final Producer producer;
     private final IResponseGateway responseGateway;
 
+    @CacheEvict(cacheNames = "BFF", key="#idPeople")
     public PeopleResource getPeopleWithContacts(final String idPeople) throws ExecutionException, InterruptedException {
+        return getPeopleResource(idPeople);
+    }
+
+    @Cacheable(cacheNames = "BFF", key="#idPeople")
+    public PeopleResource getPeopleWithContactsCached(final String idPeople) throws ExecutionException, InterruptedException {
+        return getPeopleResource(idPeople);
+    }
+
+    private PeopleResource getPeopleResource(String idPeople) throws InterruptedException, ExecutionException {
         final var key = UUID.randomUUID().toString();
         CompletableFuture<String> reply = producer.send(idPeople, key);
 

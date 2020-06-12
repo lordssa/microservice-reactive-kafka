@@ -37,7 +37,6 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
-    @Cacheable(cacheNames = "ContactGateway", key="#contact.getPeopleId()")
     public Flux<Contact> getContactsByPeople(Contact contact) {
         return Flux.just(contact)
                 .map(contactToContactIntegrationResourceConverter::convert)

@@ -32,7 +32,6 @@ public class PeopleGateway implements IPeopleGateway {
     }
 
     @Override
-    @Cacheable(cacheNames = "PeopleGateway", key="#people.getId()")
     public Mono<People> getPeopleById(People people) {
         return Mono.just(people)
                 .map(peopleToPeopleIntegrationResourceConverter::convert)

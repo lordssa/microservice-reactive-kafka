@@ -1,5 +1,6 @@
 package com.soares.app.dataprovider;
 
+import com.soares.app.dataprovider.cache.CacheService;
 import com.soares.app.dataprovider.repository.ContactRepository;
 import com.soares.app.dataprovider.repository.adapter.ContactDBToContactConverter;
 import com.soares.app.dataprovider.repository.adapter.ContactToContactDBConverter;
@@ -7,19 +8,18 @@ import com.soares.app.dataprovider.repository.model.ContactDB;
 import com.soares.core.entity.Contact;
 import com.soares.core.gateway.IContactGateway;
 import lombok.AllArgsConstructor;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Component
 @AllArgsConstructor
-public class ContactGateway implements IContactGateway {
+public class ContactGateway extends CacheService<ContactDB> implements IContactGateway {
     private ContactRepository contactRepository;
     private ContactToContactDBConverter contactToContactDBConverter;
     private ContactDBToContactConverter contactDBToContactConverter;
+
+    private final static String CACHE_NAME = "ContactGateway";
 
     @Override
     public Mono<Contact> save(Contact contact) {
@@ -31,44 +31,42 @@ public class ContactGateway implements IContactGateway {
     }
 
     @Override
-    @CacheEvict(cacheNames = "Contact", key = "#id")
     public Mono<Void> delete(String id) {
-        return contactRepository.deleteById(id);
+        return contactRepository.deleteById(id)
+        .doOnNext(aVoid -> evictValue(CACHE_NAME,id));
     }
 
     @Override
-    @Cacheable(cacheNames = "Contact", key="#contact.getId()")
     public Mono<Contact> getContactById(Contact contact) {
         return Mono.just(contact)
                 .map(contactToContactDBConverter::convert)
                 .map(ContactDB::getId)
-                .flatMap(contactDB -> contactRepository.findById(contactDB))
+                .flatMap(idContactDB ->
+                        findCacheValue(CACHE_NAME, idContactDB, contactRepository.findById(idContactDB)))
                 .map(contactDBToContactConverter::convert)
                 .defaultIfEmpty(Contact.builder().build());
     }
 
     @Override
-    @Cacheable(cacheNames = "Contact", key="#contact.getPeopleId()")
     public Flux<Contact> getContactsByPeople(Contact contact) {
         System.out.println(contact);
         return Flux.just(contact)
                 .map(contactToContactDBConverter::convert)
                 .map(ContactDB::getPeopleId)
-                .flatMap(peopleId -> contactRepository.findAllByPeopleId(peopleId))
+                .flatMap(peopleId ->
+                        findCacheValues(CACHE_NAME, peopleId, contactRepository.findAllByPeopleId(peopleId)))
                 .doOnNext(System.out::println)
                 .map(contactDBToContactConverter::convert)
                 .defaultIfEmpty(Contact.builder().build());
     }
 
     @Override
-    @Cacheable(cacheNames = "Contact", key="#root.method.name")
     public Flux<Contact> getAll() {
-        return contactRepository.findAll()
+        return findCacheValues(CACHE_NAME, "getAll", contactRepository.findAll())
                 .map(contactDBToContactConverter::convert);
     }
 
     @Override
-    @CachePut(cacheNames = "Contact", key="#contact.getPeopleId()")
     public Mono<Contact> update(Contact contact) {
         return Mono.just(contact)
                 .map(contactToContactDBConverter::convert)
